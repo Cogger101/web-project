@@ -1,14 +1,29 @@
 header {
-    display: flex;
-    justify-content: space-between;
-}
-h2 {
+  display: flex;
+  justify-content: space-between;
 }
 
-.navbar {
-    display: flex;
-    list-style-type: none;
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
 }
-.aboutMe {
-    flex-direction: wrap;
+
+.icons1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
