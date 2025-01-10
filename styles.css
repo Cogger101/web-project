@@ -1,7 +1,6 @@
 body {
   display: flex;
   flex-direction: column;
-  background-color: rgb(185, 243, 243);
   padding: 30px;
 }
 
@@ -9,9 +8,12 @@ header {
   display: none;
 }
 
-div.introLine {
+.introLine {
   display: flex;
   align-items: center;
+}
+.introLine--img {
+  display: none;
 }
 
 div h2.juniorDev {
@@ -76,7 +78,21 @@ div h2.juniorDev {
   height: 50px;
 }
 
+.icons3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icons3--sass {
+  fill: pink;
+  width: 50px;
+  height: 50px;
+}
+
 .projects {
+  text-align: center;
+}
+.projects--para {
   text-align: center;
 }
 
@@ -85,6 +101,7 @@ div h2.juniorDev {
   align-items: center;
   justify-content: center;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .bottomOfPage--linkedin__image {
   width: 50px;
@@ -92,9 +109,28 @@ div h2.juniorDev {
 }
 
 @media only screen and (min-width: 451px) {
+  body {
+    margin: 50px;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   ul {
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
+  }
+  .introLine {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .introLine--img {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
   }
 }
