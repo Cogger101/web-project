@@ -1,12 +1,33 @@
-header {
+body {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  background-color: rgb(185, 243, 243);
+  padding: 30px;
 }
 
-ul {
+header {
+  display: none;
+}
+
+div.introLine {
   display: flex;
-  justify-content: space-evenly;
-  list-style-type: none;
+  align-items: center;
+}
+
+div h2.juniorDev {
+  display: flex;
+  text-align: center;
+}
+
+.aboutMe {
+  text-align: center;
+}
+
+.technicalSkills {
+  text-align: center;
+}
+.technicalSkills--technicalSkills--title {
+  font-weight: bold;
 }
 
 .icons1 {
@@ -14,16 +35,66 @@ ul {
   align-items: center;
   justify-content: center;
 }
+.icons1--html {
+  fill: orange;
+  width: 50px;
+  height: 50px;
+}
+.icons1--css {
+  fill: blue;
+  width: 50px;
+  height: 50px;
+}
+.icons1--react {
+  fill: turquoise;
+  width: 50px;
+  height: 50px;
+}
+.icons1--java {
+  width: 50px;
+  height: 50px;
+}
 
 .icons2 {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.icons2--git {
+  fill: rgb(243, 84, 26);
+  width: 50px;
+  height: 50px;
+}
+.icons2--javaScript {
+  fill: rgb(245, 245, 29);
+  width: 50px;
+  height: 50px;
+}
+.icons2--github {
+  fill: rgb(82, 8, 202);
+  width: 50px;
+  height: 50px;
+}
 
-.icons {
-  flex: 1;
-  justify-content: center;
+.projects {
+  text-align: center;
+}
+
+.bottomOfPage {
+  display: flex;
   align-items: center;
-  margin: auto;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.bottomOfPage--linkedin__image {
+  width: 50px;
+  height: 50px;
+}
+
+@media only screen and (min-width: 451px) {
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+  }
 }

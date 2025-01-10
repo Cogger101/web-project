@@ -1,28 +1,98 @@
-header {
+body {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    background-color: rgb(185, 243, 243);
+    padding: 30px;
+}
+header {
+    display: none;
+}
+div.introLine {
+    display: flex;
+    align-items: center;
+}
+div h2.juniorDev {
+    display: flex;
+    text-align: center;
+}
+.aboutMe {
+    text-align: center;
+}
+.technicalSkills {
+    text-align: center;
+    &--technicalSkills--title {
+        font-weight: bold;
+    }
 }
 
-ul {
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-}
 .icons1 {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    &--html {
+        fill: orange;
+        width: 50px;
+        height: 50px;
+    }
+    &--css {
+        fill: blue;
+        width: 50px;
+        height: 50px;
+    }
+    &--react {
+        fill: turquoise;
+        width: 50px;
+        height: 50px;
+    }
+    &--java {
+        width: 50px;
+        height: 50px;
+    }
 }
 
 .icons2 {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    &--git {
+        fill: rgb(243, 84, 26);
+        width: 50px;
+        height: 50px;
+    }
+    &--javaScript {
+        fill: rgb(245, 245, 29);
+        width: 50px;
+        height: 50px;
+    }
+    &--github {
+        fill: rgb(82, 8, 202);
+        width: 50px;
+        height: 50px;
+    }
+}
+.projects {
+    text-align: center;
 }
 
-.icons {
-    flex: 1;
-    justify-content: center;
+.bottomOfPage {
+    display: flex;
     align-items: center;
-    margin: auto;
+    justify-content: center;
+    justify-content: space-evenly;
+    &--linkedin {
+        &__image {
+            width: 50px;
+            height: 50px;
+        }
+    }
+}
+
+@media only screen and (min-width: 451px) {
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
+    }
 }
