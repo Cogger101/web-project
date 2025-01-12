@@ -10,16 +10,16 @@ header {
 
 .introLine {
   display: flex;
+  flex-direction: column;
   align-items: center;
   padding-top: 30px;
 }
 .introLine--img {
   display: none;
 }
-
-h2.juniorDev {
+.introLine--juniorDev {
   display: flex;
-  text-align: center;
+  text-align: left;
 }
 
 .aboutMe {
@@ -129,7 +129,7 @@ h2.juniorDev {
 @media only screen and (min-width: 451px) {
   body {
     display: flex;
-    margin: 50px;
+    margin: 100px;
     font-size: x-large;
   }
   .header {
@@ -148,10 +148,13 @@ h2.juniorDev {
   }
   .introLine {
     display: flex;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
   }
   .introLine--img {
-    display: block;
+    display: flex;
+    justify-content: flex-end;
     width: 300px;
     height: 300px;
     border-radius: 50%;
