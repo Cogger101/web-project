@@ -23,7 +23,7 @@ header {
 }
 
 .aboutMe {
-    text-align: left;
+    text-align: center;
     padding-top: 50px;
     &--img {
         width: 300px;
@@ -131,6 +131,7 @@ header {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding-left: 50px;
         &--navBar {
             display: flex;
             padding: 5px;
@@ -148,6 +149,9 @@ header {
         align-items: center;
         justify-content: space-between;
 
+        &--content {
+            padding-left: 50px;
+        }
         &--img {
             display: flex;
             justify-content: flex-end;
@@ -172,6 +176,7 @@ header {
         &--content {
             flex: 1;
             padding-left: 80px;
+            text-align: left;
         }
         &--title {
             margin-bottom: 10px;

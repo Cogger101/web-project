@@ -25,7 +25,7 @@ header {
 }
 
 .aboutMe {
-  text-align: left;
+  text-align: center;
   padding-top: 50px;
 }
 .aboutMe--img {
@@ -133,6 +133,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-left: 50px;
   }
   .header--navBar {
     display: flex;
@@ -148,6 +149,9 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+  }
+  .introLine--content {
+    padding-left: 50px;
   }
   .introLine--img {
     display: flex;
@@ -172,6 +176,7 @@ header {
   .aboutMe--content {
     flex: 1;
     padding-left: 80px;
+    text-align: left;
   }
   .aboutMe--title {
     margin-bottom: 10px;
