@@ -21,10 +21,18 @@ h2.juniorDev {
 }
 .aboutMe {
     text-align: center;
+    padding-top: 50px;
+    &--img {
+        width: 300px;
+        height: 300px;
+        border-radius: 10%;
+        object-fit: cover;
+    }
 }
 .technicalSkills {
     text-align: center;
-    &--technicalSkills--title {
+    padding-top: 30px;
+    &--title {
         font-weight: bold;
     }
 }
@@ -89,6 +97,7 @@ h2.juniorDev {
 
 .projects {
     text-align: center;
+    padding-top: 30px;
     &--para {
         text-align: center;
     }
@@ -99,38 +108,81 @@ h2.juniorDev {
     align-items: center;
     justify-content: center;
     justify-content: space-evenly;
+    padding-top: 50px;
     flex-wrap: wrap;
-    &--linkedin {
-        &__image {
-            width: 50px;
-            height: 50px;
-        }
+    &--linkedIn {
+        display: inline-flex;
+        align-items: center;
+        font-size: 16px;
     }
+}
+.bottomOfPage--linkedIn__image {
+    margin-left: 8px; /* Space between the text and the SVG */
+    width: 20px;
+    height: 20px;
 }
 
 @media only screen and (min-width: 451px) {
     body {
+        display: flex;
         margin: 50px;
+        font-size: x-large;
     }
-    header {
+    .header {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        &--navBar {
+            display: flex;
+            padding: 5px;
+            justify-content: space-evenly;
+            list-style-type: none;
+        }
     }
-    ul {
-        display: flex;
-        justify-content: space-evenly;
-        list-style-type: none;
+    li {
+        padding-right: 20px;
     }
+
     .introLine {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+
         &--img {
             display: block;
-            width: 100%;
-            max-width: 200px;
-            height: auto;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+    .aboutMe {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin: 50px;
+
+        &--img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        &--content {
+            flex: 1;
+        }
+        &--title {
+            margin-bottom: 10px;
+        }
+    }
+    .technicalSkills {
+        text-align: center;
+        padding-top: 30px;
+
+        &--title {
+            font-weight: bold;
+        }
+        &--para {
+            padding: 0px 150px 0px 150px;
         }
     }
 }
