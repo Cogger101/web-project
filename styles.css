@@ -10,6 +10,11 @@ header {
   display: none;
 }
 
+main {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
 .introLine {
   display: flex;
   flex-direction: column;
@@ -130,6 +135,9 @@ header {
 .bottomOfPage--linkedIn {
   display: inline-flex;
 }
+.bottomOfPage--github {
+  display: inline-flex;
+}
 
 @media only screen and (max-width: 600px) {
   body {
@@ -232,6 +240,7 @@ header {
   }
   .projects img {
     width: 400px;
+    border-radius: 10%;
   }
   .projects--title {
     text-align: center;

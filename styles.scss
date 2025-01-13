@@ -8,6 +8,11 @@ body {
 header {
     display: none;
 }
+
+main {
+    margin-left: 25px;
+    margin-right: 25px;
+}
 .introLine {
     display: flex;
     flex-direction: column;
@@ -127,6 +132,9 @@ header {
     &--linkedIn {
         display: inline-flex;
     }
+    &--github {
+        display: inline-flex;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -235,6 +243,7 @@ header {
 
         img {
             width: 400px;
+            border-radius: 10%;
         }
         &--title {
             text-align: center;
