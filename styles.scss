@@ -3,7 +3,7 @@ body {
     flex-direction: column;
     margin: 0px 0px;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #d6eef0;
+    background-color: white;
 }
 header {
     display: none;
@@ -128,12 +128,15 @@ main {
     padding-top: 50px;
     flex-wrap: wrap;
     padding-bottom: 50px;
-    background-color: rgb(236, 236, 148);
+    background-color: rgb(1, 8, 102);
+    color: white;
     &--linkedIn {
         display: inline-flex;
+        fill: white;
     }
     &--github {
         display: inline-flex;
+        fill: white;
     }
 }
 
@@ -162,21 +165,33 @@ main {
         align-items: center;
         justify-content: space-between;
         padding-left: 50px;
-        background-color: rgb(236, 236, 148);
+        background-color: rgb(1, 8, 102);
+        color: white;
 
         &--navBar {
             display: flex;
             padding: 5px;
             justify-content: space-evenly;
             list-style-type: none;
+            text-decoration: none;
         }
     }
+
     main {
         margin-left: 200px;
         margin-right: 200px;
     }
     li {
         padding-right: 20px;
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        #contact {
+            border: white 1px solid;
+            padding: 5px 15px 5px 15px;
+            border-radius: 10%;
+        }
     }
 
     .introLine {
@@ -184,6 +199,7 @@ main {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        padding-top: 70px;
 
         &--content {
             padding-left: 50px;
@@ -191,10 +207,11 @@ main {
         &--img {
             display: flex;
             justify-content: flex-end;
-            margin-right: 50px;
+            margin-right: 100px;
             width: 500px;
             height: 500px;
             border-radius: 10%;
+            border: black 2px solid;
             object-fit: cover;
         }
     }
@@ -209,6 +226,7 @@ main {
             height: 500px;
             border-radius: 10%;
             object-fit: cover;
+            border: black 2px solid;
         }
         &--content {
             flex: 1;
@@ -234,16 +252,24 @@ main {
         flex-direction: row;
         justify-content: center;
         padding-bottom: 70px;
+        svg {
+            display: flex;
+
+            height: 100px;
+            width: 100px;
+        }
     }
     .projects {
         display: grid;
         grid-template-columns: auto auto;
         grid-column-gap: 10px;
         grid-row-gap: 50px;
+        padding-bottom: 30px;
 
         img {
-            width: 400px;
+            width: 500px;
             border-radius: 10%;
+            border: black 2px solid;
         }
         &--title {
             text-align: center;
