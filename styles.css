@@ -11,8 +11,12 @@ header {
 }
 
 main {
-  margin-left: 25px;
-  margin-right: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1500px;
+  width: 100%;
 }
 
 .introLine {
@@ -177,8 +181,12 @@ main {
     text-decoration: none;
   }
   main {
-    margin-left: 200px;
-    margin-right: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1500px;
+    width: 100%;
   }
   li {
     padding-right: 20px;
@@ -280,5 +288,19 @@ main {
   }
   .projects--forth {
     grid-area: 2/2/3/3;
+  }
+  .projects__btn {
+    padding: 10px 20px;
+    border-radius: 10%;
+    color: white;
+    font-size: large;
+    background-color: rgb(1, 8, 102);
+  }
+  .projects__link {
+    text-decoration: none;
+    color: inherit;
+  }
+  .projects__link:visited {
+    color: yellow;
   }
 }
