@@ -20,7 +20,7 @@ This is my first portfolio page hosted on **Github Pages**
 ### Highlights
 
 -   First portfolio page
--   First time using **SCSS** and **BEM methodology**, it was fun to impliment.
+-   First time using **SCSS** and **BEM methodology**, it was fun to impliment - Use `sass --watch --no-source-map styles.scss styles.css` to compile sass changes
 -   Hosing on **GitHub Pages**
 -   It was a great exercise to get comfortable and increase with the **HTML** elements and structure
 -   Ensuring responsiveness across mobile and desktop

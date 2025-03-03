@@ -137,12 +137,14 @@ main {
   background-color: rgb(1, 8, 102);
   color: white;
 }
-.bottomOfPage--linkedIn {
+.bottomOfPage__linkedIn, .bottomOfPage__github, .bottomOfPage__email {
   display: inline-flex;
-  fill: white;
 }
-.bottomOfPage--github {
-  display: inline-flex;
+.bottomOfPage__icon {
+  width: 30px;
+  height: 30px;
+}
+.bottomOfPage__icon path {
   fill: white;
 }
 

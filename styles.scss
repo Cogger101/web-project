@@ -1,3 +1,5 @@
+@import "mobileStyling";
+
 body {
     display: flex;
     flex-direction: column;
@@ -135,16 +137,20 @@ main {
     padding-bottom: 50px;
     background-color: rgb(1, 8, 102);
     color: white;
-    &--linkedIn {
+
+    &__linkedIn,
+    &__github,
+    &__email {
         display: inline-flex;
-        fill: white;
     }
-    &--github {
-        display: inline-flex;
+    &__icon {
+        width: 30px;
+        height: 30px;
+    }
+    &__icon path {
         fill: white;
     }
 }
-
 @media only screen and (max-width: 600px) {
     body {
         display: flex;
