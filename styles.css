@@ -100,7 +100,7 @@ main {
   text-align: center;
   padding-top: 30px;
 }
-.technicalSkills--title {
+.technicalSkills__title {
   font-weight: bold;
 }
 
@@ -109,22 +109,22 @@ main {
   align-items: center;
   justify-content: center;
 }
-.icons1--html {
+.icons1__html {
   fill: orange;
   width: 50px;
   height: 50px;
 }
-.icons1--css {
+.icons1__css {
   fill: blue;
   width: 50px;
   height: 50px;
 }
-.icons1--react {
+.icons1__react {
   fill: turquoise;
   width: 50px;
   height: 50px;
 }
-.icons1--java {
+.icons1__java {
   width: 50px;
   height: 50px;
 }
@@ -134,17 +134,17 @@ main {
   align-items: center;
   justify-content: center;
 }
-.icons2--git {
+.icons2__git {
   fill: rgb(243, 84, 26);
   width: 50px;
   height: 50px;
 }
-.icons2--javaScript {
+.icons2__javaScript {
   fill: rgb(245, 245, 29);
   width: 50px;
   height: 50px;
 }
-.icons2--github {
+.icons2__github {
   fill: rgb(82, 8, 202);
   width: 50px;
   height: 50px;
@@ -155,8 +155,24 @@ main {
   align-items: center;
   justify-content: center;
 }
-.icons3--sass {
+.icons3__sass {
   fill: pink;
+  width: 50px;
+  height: 50px;
+}
+.icons3__typeScript {
+  fill: #007acc;
+  width: 50px;
+  height: 50px;
+}
+
+.icons4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icons4__springBoot {
+  fill: green;
   width: 50px;
   height: 50px;
 }
@@ -174,7 +190,7 @@ main {
 .projects img {
   width: 100px;
 }
-.projects--btn {
+.projects__btn {
   margin-bottom: 10px;
 }
 

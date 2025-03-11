@@ -100,7 +100,7 @@ main {
 .technicalSkills {
     text-align: center;
     padding-top: 30px;
-    &--title {
+    &__title {
         font-weight: bold;
     }
 }
@@ -110,22 +110,22 @@ main {
     align-items: center;
     justify-content: center;
 
-    &--html {
+    &__html {
         fill: orange;
         width: 50px;
         height: 50px;
     }
-    &--css {
+    &__css {
         fill: blue;
         width: 50px;
         height: 50px;
     }
-    &--react {
+    &__react {
         fill: turquoise;
         width: 50px;
         height: 50px;
     }
-    &--java {
+    &__java {
         width: 50px;
         height: 50px;
     }
@@ -136,17 +136,17 @@ main {
     align-items: center;
     justify-content: center;
 
-    &--git {
+    &__git {
         fill: rgb(243, 84, 26);
         width: 50px;
         height: 50px;
     }
-    &--javaScript {
+    &__javaScript {
         fill: rgb(245, 245, 29);
         width: 50px;
         height: 50px;
     }
-    &--github {
+    &__github {
         fill: rgb(82, 8, 202);
         width: 50px;
         height: 50px;
@@ -156,8 +156,23 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    &--sass {
+    &__sass {
         fill: pink;
+        width: 50px;
+        height: 50px;
+    }
+    &__typeScript {
+        fill: #007acc;
+        width: 50px;
+        height: 50px;
+    }
+}
+.icons4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__springBoot {
+        fill: green;
         width: 50px;
         height: 50px;
     }
@@ -175,7 +190,7 @@ main {
     img {
         width: 100px;
     }
-    &--btn {
+    &__btn {
         margin-bottom: 10px;
     }
 }
