@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Portfolio Page</title>
         <link rel="stylesheet" href="styles.css" />
-        <script type="text/javascript" src="darkMode.js" defer></script>
+        <script type="text/javascript" src="script.js" defer></script>
     </head>
     <body>
         <header class="header">
@@ -29,7 +29,7 @@
                 <div class="introLine">
                     <div class="introLine__content">
                         <p class="introLine__welcome">Heya! I'm Sean Coughlan <span>😀</span></p>
-                        <h2 class="introLine__juniorDev">A Junior Software Developer based <br> in London.</h1>
+                        <h2 class="introLine__juniorDev">A Junior Software Developer based in London.</h1>
                     </div>
                         <img  class="introLine__img" src="assets/media/naraSeanFeedingDeer.jpeg" alt="Sean feeding a deer in Nara, Japan">
 
@@ -39,7 +39,7 @@
                     <div class="aboutMe">
                         <img  class="aboutMe__img" src="assets/media/whaleWatchingNZSean.png" alt="myself whale watching in New Zealand">
                         <div class="aboutMe__content">
-                            <h3 class="aboutMe__title">About me</h2>
+                            <h2 class="aboutMe__title">About me</h2>
                             <p class="aboutMe__para">I'm Sean from London, a career switcher from facilities and project management to software engineering. With extensive experience in financial services sector, including roles at Barclays and Punter Southall Group, I'm known for strong team collaboration and delivering high-quality customer service and technology solutions.</br>
 
 A transformative year traveling through Asia, Australia, and New Zealand reignited my passion for software development. Using various apps during my travels highlighted the power of technology in daily life, inspiring me to explore software's limitless possibilities. After returning, I completed an intensive software development bootcamp and have joined _nology's Pathway To Tech program, eager to contribute my skills to the dynamic technology industry.</br>
@@ -52,7 +52,7 @@ In my free time, I enjoy playing video games, which enhance my strategic thinkin
 
             <section id="techSkills">
                     <div class="technicalSkills">
-                        <h3 class="technicalSkills__title">Technical Skills</h2>
+                        <h2 class="technicalSkills__title">Technical Skills</h2>
                         <p class="technicalSkills__para">Here are some of the skills I have aquired along the way: </p>
                     </div>
                     <div class="allIcons">
@@ -77,35 +77,37 @@ In my free time, I enjoy playing video games, which enhance my strategic thinkin
                         </div>
                     </div>    
             </section>
-            <section id="projects">
-                <h3 class="projects--title">My Projects</h2>
-                    <p class="projects--para">Take a look at some of the projects I have created on my journey to becoming a Software Developer:</p>
+            <section id="projects" class="projectsContainer">
+                <h2 class="projectsContainer__title">My Projects</h2>
+                    <p class="projectsContainer__para">Take a look at some of the projects I have created on my journey to becoming a Software Developer:</p>
                     <div class="projects">
-                        <div class="projects--one">
-                            <p>Hangman</p>
-                            <img class="projects--one" src="assets/media/hangman-game-ts.png" alt="screenshot of my hangman Game"/>
+                        <div class="projects__one project-card">
+                            <h3 class="project-card-proName">Hangman</h3>
+                            <img class="projects__one-img project-card-img" src="assets/media/hangman-game-ts.png" alt="screenshot of my hangman Game" />
                             <p>Built using: Typescript, HTML & SASS</p>
-                            <button class="projects__btn"><a href="https://cogger101.github.io/my-ts-game/" class="projects__link" target="_blank">Review</a></button>
+                            <button class="projects__one-btn project-card-btn">
+                                <a href="https://cogger101.github.io/my-ts-game/" class="project-card__link" target="_blank">Review</a>
+                            </button>
                         </div>
-                        <div class="projects--second">
-                            <p>Snap-Game</p>
-                            <img class="projects--second" src="assets/media/snapGamePic.png" alt="screenshot of playing cards"/>
-                            <p>Built using: Java</p>
-                            
-                            <button class="projects__btn"><a href="https://github.com/Cogger101/snap-game" class="projects__link" target="_blank">Review</a></button>
-                            
+                        <div class="projects__second project-card">
+                            <h3 class="project-card-proName">Snap-Game</h3>
+                            <img class="projects__second-img project-card-img" src="assets/media/snapGamePic.png" alt="screenshot of playing cards" />
+                            <p>Built using: Java, Object-Oriented Programming(OOP)</p>
+                            <button class="projects__btn project-card-btn">
+                                <a href="https://github.com/Cogger101/snap-game" class="project-card__link" target="_blank">Review</a>
+                            </button>
                         </div>
-                        <div class="projects--third">
-                            <p>Coming soon...</p>
-                            <img class="projects--third" src="assets/media/placeholder.jpg" alt="empty image placeholder for project snippets"/>
+                        <div class="projects__third project-card">
+                            <h3 class="project-card-proName">Coming soon...</h3>
+                            <img class="projects__third-img project-card-img" src="assets/media/placeholder.jpg" alt="empty image placeholder for project snippets"/>
                             <p>This will be Project 3!</p>
-                            <button class="projects__btn">Review</button>
+                            <button class="projects__third-btn project-card-btn">Review</button>
                         </div>
-                        <div class="projects--forth">
-                            <p>Coming soon...</p>
-                            <img class="projects--forth" src="assets/media/placeholder.jpg" alt="empty image placeholder for project snippets"/>
+                        <div class="projects__forth project-card">
+                            <h3 class="project-card-proName">Coming soon...</h3>
+                            <img class="projects__forth-img project-card-img" src="assets/media/placeholder.jpg" alt="empty image placeholder for project snippets"/>
                             <p>This will be Project 4!</p>
-                            <button class="projects__btn">Review</button>
+                            <button class="projects__forth-btn project-card-btn">Review</button>
                         </div>
                     </div>
                 </section>

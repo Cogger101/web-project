@@ -4,9 +4,10 @@
     --base-colour: white;
     --base-variant: #e8e9ed;
     --text-color: #111528;
-    --secondary-text: #232738;
+    --secondary-text: #383c4d;
     --primary-color: #3a435d;
     --accent-color: #0071ff;
+    --box-shadow-color: rgba(0, 0, 0, 0.5);
 }
 
 .darkMode {
@@ -16,6 +17,7 @@
     --secondary-text: #a4a5b8;
     --primary-color: #3a435d;
     --accent-color: #0071ff;
+    --box-shadow-color: rgba(255, 255, 255, 0.5);
 }
 #theme-switch {
     margin-top: 15px;
@@ -48,7 +50,7 @@
 body {
     display: flex;
     flex-direction: column;
-    margin: 10px 10px;
+    margin: 15px 15px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--base-colour);
     color: var(--text-color);
@@ -83,12 +85,13 @@ main {
     padding-top: 50px;
     &__content {
         padding: 5px 5px;
-        border: solid rgb(1, 8, 102);
-        border-radius: 5%;
+        // border: solid rgb(1, 8, 102);
+        // border-radius: 5%;
     }
     &__title {
     }
     &__para {
+        color: var(--secondary-text);
     }
     &__img {
         width: 300px;
@@ -178,23 +181,54 @@ main {
     }
 }
 
-.projects {
+.projectsContainer {
     text-align: center;
     padding-top: 30px;
-    &--title {
+    &__title,
+    &__para {
         text-align: center;
-    }
-    &--para {
-        text-align: center;
-    }
-    img {
-        width: 100px;
-    }
-    &__btn {
-        margin-bottom: 10px;
     }
 }
 
+.project-card {
+    background-color: var(--base-colour);
+    color: var(--text-color);
+    box-shadow: 0 4px 10px var(--box-shadow-color);
+    border: 1.5px solid var(--secondary-color);
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: left;
+    overflow: hidden;
+    position: relative;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    margin: 30px 0px;
+    &.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    &-img {
+        width: 100%;
+        height: auto;
+        border-radius: 5%;
+    }
+    &-btn {
+        padding: 10px 20px;
+        border-radius: 10%;
+        color: white;
+        font-size: large;
+        border: solid var(rgb(1, 8, 102));
+    }
+    &__link {
+        text-decoration: none;
+        color: rgb(1, 8, 102);
+        &:visited {
+            color: rgb(170, 4, 170);
+        }
+    }
+}
 .bottomOfPage {
     display: flex;
     align-items: center;
