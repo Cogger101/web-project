@@ -50,7 +50,6 @@
 body {
   display: flex;
   flex-direction: column;
-  margin: 15px 15px;
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--base-colour);
   color: var(--text-color);
@@ -64,8 +63,9 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 auto;
+  margin: 15px auto;
   width: 100%;
+  padding-bottom: 70px;
 }
 
 .introLine {
@@ -245,9 +245,10 @@ main {
   transform: translateY(0);
 }
 .project-card-img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   border-radius: 5%;
+  object-fit: cover;
 }
 .project-card-btn {
   padding: 10px 20px;
@@ -264,6 +265,16 @@ main {
   color: yellow;
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(1, 8, 102);
+  color: white;
+  z-index: 1000;
+}
+
 .bottomOfPage {
   display: flex;
   align-items: center;
@@ -272,8 +283,6 @@ main {
   padding-top: 50px;
   flex-wrap: wrap;
   padding-bottom: 50px;
-  background-color: rgb(1, 8, 102);
-  color: white;
 }
 .bottomOfPage__linkedIn, .bottomOfPage__github, .bottomOfPage__email {
   display: inline-flex;
@@ -293,8 +302,12 @@ main {
     font-family: Arial, Helvetica, sans-serif;
   }
   header {
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
   }
   .header {
     display: flex;
@@ -329,6 +342,7 @@ main {
     margin: 0 auto;
     max-width: 1500px;
     width: 100%;
+    padding-top: 70px;
   }
   .introLine {
     display: flex;
@@ -402,37 +416,23 @@ main {
     padding-bottom: 30px;
   }
   .projects img {
-    width: 500px;
-    border-radius: 10%;
     border: black 2px solid;
+    width: 100%;
+    height: auto;
   }
-  .projects--title {
+  .projects__title {
     text-align: center;
   }
-  .projects--one {
+  .projects__one {
     grid-area: 1/1/2/2;
   }
-  .projects--second {
+  .projects__second {
     grid-area: 1/2/2/3;
   }
-  .projects--third {
+  .projects__third {
     grid-area: 2/1/3/2;
   }
-  .projects--forth {
+  .projects__forth {
     grid-area: 2/2/3/3;
-  }
-  .projects__btn {
-    padding: 10px 20px;
-    border-radius: 10%;
-    color: white;
-    font-size: large;
-    background-color: rgb(1, 8, 102);
-  }
-  .projects__link {
-    text-decoration: none;
-    color: inherit;
-  }
-  .projects__link:visited {
-    color: yellow;
   }
 }

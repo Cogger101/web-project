@@ -48,7 +48,6 @@
 body {
     display: flex;
     flex-direction: column;
-    margin: 15px 15px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--base-colour);
     color: var(--text-color);
@@ -61,8 +60,10 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0 auto;
+    // margin: 0 auto;
+    margin: 15px auto;
     width: 100%;
+    padding-bottom: 70px;
 }
 .introLine {
     display: flex;
@@ -159,7 +160,6 @@ main {
         height: 75px;
     }
 }
-
 .icons2 {
     display: flex;
     align-items: center;
@@ -235,9 +235,10 @@ main {
     }
 
     &-img {
-        width: 100%;
+        max-width: 100%;
         height: auto;
         border-radius: 5%;
+        object-fit: cover;
     }
     &-btn {
         padding: 10px 20px;
@@ -256,6 +257,16 @@ main {
         }
     }
 }
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(1, 8, 102);
+    color: white;
+
+    z-index: 1000;
+}
 .bottomOfPage {
     display: flex;
     align-items: center;
@@ -264,8 +275,6 @@ main {
     padding-top: 50px;
     flex-wrap: wrap;
     padding-bottom: 50px;
-    background-color: rgb(1, 8, 102);
-    color: white;
 
     &__linkedIn,
     &__github,
