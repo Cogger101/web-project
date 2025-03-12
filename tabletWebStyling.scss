@@ -8,7 +8,7 @@
 //     }
 // }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 1000px) {
     body {
         display: flex;
         font-size: x-large;
@@ -34,15 +34,6 @@
             text-decoration: none;
         }
     }
-
-    main {
-        display: flex;
-        justify-content: center;
-        margin: 0 auto;
-        max-width: 1500px;
-        width: 100%;
-    }
-
     li {
         padding-right: 20px;
         a {
@@ -54,6 +45,14 @@
             padding: 5px 15px 5px 15px;
             border-radius: 10%;
         }
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 1500px;
+        width: 100%;
     }
 
     .introLine {
@@ -83,29 +82,29 @@
         gap: 16px;
         margin: 50px;
 
-        &--img {
+        &__img {
             width: 500px;
             height: 500px;
             border-radius: 10%;
             object-fit: cover;
             border: black 2px solid;
         }
-        &--content {
+        &__content {
             flex: 1;
             padding-left: 80px;
             text-align: left;
         }
-        &--title {
+        &__title {
             margin-bottom: 10px;
         }
     }
     .technicalSkills {
         padding-top: 30px;
-        &--title {
+        &__title {
             font-weight: bold;
             text-align: center;
         }
-        &--para {
+        &__para {
             padding: 0px 150px 0px 150px;
         }
     }
@@ -116,7 +115,8 @@
         padding-bottom: 70px;
         svg {
             display: flex;
-
+            align-items: center;
+            justify-content: space-between;
             height: 100px;
             width: 100px;
         }

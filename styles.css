@@ -89,9 +89,6 @@ main {
 .aboutMe__content {
   padding: 5px 5px;
 }
-.aboutMe__para {
-  color: var(--secondary-text);
-}
 .aboutMe__img {
   width: 300px;
   height: 300px;
@@ -107,6 +104,46 @@ main {
   font-weight: bold;
 }
 
+#html {
+  text-align: center;
+}
+
+#css {
+  text-align: center;
+}
+
+#sass {
+  text-align: center;
+}
+
+#react {
+  text-align: center;
+}
+
+#javaScript {
+  text-align: center;
+}
+
+#typeScript {
+  text-align: center;
+}
+
+#java {
+  text-align: center;
+}
+
+#springBoot {
+  text-align: center;
+}
+
+#gitHub {
+  text-align: center;
+}
+
+#git {
+  text-align: center;
+}
+
 .icons1 {
   display: flex;
   align-items: center;
@@ -114,22 +151,23 @@ main {
 }
 .icons1__html {
   fill: orange;
-  width: 50px;
-  height: 50px;
+  width: 75px;
+  height: 75px;
 }
 .icons1__css {
   fill: blue;
-  width: 50px;
-  height: 50px;
+  width: 75px;
+  height: 75px;
 }
 .icons1__react {
   fill: turquoise;
-  width: 50px;
-  height: 50px;
+  width: 75px;
+  height: 75px;
 }
-.icons1__java {
-  width: 50px;
-  height: 50px;
+.icons1__javaScript {
+  fill: rgb(245, 245, 29);
+  width: 75px;
+  height: 75px;
 }
 
 .icons2 {
@@ -137,20 +175,19 @@ main {
   align-items: center;
   justify-content: center;
 }
-.icons2__git {
-  fill: rgb(243, 84, 26);
-  width: 50px;
-  height: 50px;
+.icons2__springBoot {
+  fill: green;
+  width: 75px;
+  height: 75px;
 }
-.icons2__javaScript {
-  fill: rgb(245, 245, 29);
-  width: 50px;
-  height: 50px;
+.icons2__java {
+  width: 75px;
+  height: 75px;
 }
 .icons2__github {
   fill: rgb(82, 8, 202);
-  width: 50px;
-  height: 50px;
+  width: 75px;
+  height: 75px;
 }
 
 .icons3 {
@@ -174,10 +211,10 @@ main {
   align-items: center;
   justify-content: center;
 }
-.icons4__springBoot {
-  fill: green;
-  width: 50px;
-  height: 50px;
+.icons4__git {
+  fill: rgb(243, 84, 26);
+  width: 75px;
+  height: 75px;
 }
 
 .projectsContainer {
@@ -217,14 +254,14 @@ main {
   border-radius: 10%;
   color: white;
   font-size: large;
-  border: solid var(rgb(1, 8, 102));
+  background-color: rgb(1, 8, 102);
 }
 .project-card__link {
   text-decoration: none;
-  color: rgb(1, 8, 102);
+  color: var(--base-variant);
 }
 .project-card__link:visited {
-  color: rgb(170, 4, 170);
+  color: yellow;
 }
 
 .bottomOfPage {
@@ -247,4 +284,155 @@ main {
 }
 .bottomOfPage__icon path {
   fill: white;
+}
+
+@media only screen and (min-width: 1000px) {
+  body {
+    display: flex;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  header {
+    position: sticky;
+    top: 0;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    background-color: rgb(1, 8, 102);
+    color: white;
+  }
+  .header__navBar {
+    display: flex;
+    padding: 5px;
+    justify-content: space-evenly;
+    list-style-type: none;
+    text-decoration: none;
+  }
+  li {
+    padding-right: 20px;
+  }
+  li a {
+    text-decoration: none;
+    color: white;
+  }
+  li #contact {
+    border: white 1px solid;
+    padding: 5px 15px 5px 15px;
+    border-radius: 10%;
+  }
+  main {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1500px;
+    width: 100%;
+  }
+  .introLine {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 70px;
+  }
+  .introLine__content {
+    padding-left: 50px;
+  }
+  .introLine__img {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+    width: 500px;
+    height: 500px;
+    border-radius: 10%;
+    border: black 2px solid;
+    object-fit: cover;
+  }
+  .aboutMe {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 50px;
+  }
+  .aboutMe__img {
+    width: 500px;
+    height: 500px;
+    border-radius: 10%;
+    object-fit: cover;
+    border: black 2px solid;
+  }
+  .aboutMe__content {
+    flex: 1;
+    padding-left: 80px;
+    text-align: left;
+  }
+  .aboutMe__title {
+    margin-bottom: 10px;
+  }
+  .technicalSkills {
+    padding-top: 30px;
+  }
+  .technicalSkills__title {
+    font-weight: bold;
+    text-align: center;
+  }
+  .technicalSkills__para {
+    padding: 0px 150px 0px 150px;
+  }
+  .allIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 70px;
+  }
+  .allIcons svg {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    width: 100px;
+  }
+  .projects {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 50px;
+    padding-bottom: 30px;
+  }
+  .projects img {
+    width: 500px;
+    border-radius: 10%;
+    border: black 2px solid;
+  }
+  .projects--title {
+    text-align: center;
+  }
+  .projects--one {
+    grid-area: 1/1/2/2;
+  }
+  .projects--second {
+    grid-area: 1/2/2/3;
+  }
+  .projects--third {
+    grid-area: 2/1/3/2;
+  }
+  .projects--forth {
+    grid-area: 2/2/3/3;
+  }
+  .projects__btn {
+    padding: 10px 20px;
+    border-radius: 10%;
+    color: white;
+    font-size: large;
+    background-color: rgb(1, 8, 102);
+  }
+  .projects__link {
+    text-decoration: none;
+    color: inherit;
+  }
+  .projects__link:visited {
+    color: yellow;
+  }
 }
