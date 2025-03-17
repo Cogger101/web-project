@@ -1,6 +1,6 @@
 # 🚀 Sean's Web Portfolio
 
-👋 Welcome to my first portfolio page hosted on **Github Pages**
+👋 Welcome to my first portfolio page hosted on **Github Pages** </br>
 <a target="_blank" href="https://cogger101.github.io/web-project/" style="display: inline-block;">
     <img src="https://img.shields.io/badge/My_Portfolio-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white" alt="myPortfolio" />
   </a>
